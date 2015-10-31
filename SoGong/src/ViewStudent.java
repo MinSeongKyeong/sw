@@ -18,6 +18,9 @@ public class ViewStudent {
 		readFile = new FileReader("studentlist.txt"); 
 		br = new BufferedReader(readFile);  
 		System.out.print("조회 하고자 하는 학번 입력 : ");
+		id = sc.next();
+		if(id.length()!=7) System.out.print("잘못 입력하셨습니다. ");
+		
 
 		while((getLine = br.readLine()) != null){ 
 			if(getLine.contains(id)){ 
