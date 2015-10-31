@@ -30,7 +30,11 @@ public class Main
 			try{
 				switch(Integer.parseInt(in.readLine())){
 					case 1 : // 학생 등록
+						
+						AddStudent add = new AddStudent();
+						add.addStudent();
 
+						break;
 
 					case 2 : // 학생 검색
 					
