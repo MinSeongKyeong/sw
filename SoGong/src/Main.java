@@ -44,6 +44,11 @@ public class Main
                   break;
 
                case 3 : // 학생 삭제
+            	   
+            	  DeleteStudent delete = new DeleteStudent();
+				  delete.deleteStudent();
+				  
+				  break;
 
                case 4 : // 학생 정보 수정
                   
@@ -53,6 +58,9 @@ public class Main
                   break;
 
                case 5: // 종료
+            	   
+            	   System.out.print("시스템이 종료 됩니다.  ");
+				   break wh;
 
                default : // 1~5 이외의 것이 입력될 때
 
