@@ -6,11 +6,12 @@ public class Main
 	{
 		BufferedReader in = new BufferedReader(new InputStreamReader (System.in));
 		
-		while(true){
+		wh:while(true){
 			
 			System.out.println();
 			System.out.println("\n");
 			System.out.println("\n");
+			System.out.println("�ݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢ�");
 			System.out.println("�ݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢ�");
 			System.out.println("�ݢ�                                                  �ݢ�");
 			System.out.println("�ݢ�        �л�  ���� ���α׷�                       �ݢ�");
@@ -22,13 +23,18 @@ public class Main
 			System.out.println("�ݢ�        5)  ���α׷� ����                         �ݢ�");
 			System.out.println("�ݢ�                                                  �ݢ�");
 			System.out.println("�ݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢ�");
+			System.out.println("�ݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢ�");
 			System.out.println();
 			System.out.print("�޴��� �����ϼ���.(1~5) ");
 
 			try{
 				switch(Integer.parseInt(in.readLine())){
 					case 1 : // �л� ���
+						
+						AddStudent add = new AddStudent();
+						add.addStudent();
 
+						break;
 
 					case 2 : // �л� �˻�
 					
@@ -40,6 +46,11 @@ public class Main
 					case 3 : // �л� ����
 
 					case 4 : // �л� ���� ����
+						
+						UpdateStudent update = new UpdateStudent();
+						update.UpdateStudent();
+						
+						break;
 
 					case 5: // ����
 
@@ -58,5 +69,7 @@ public class Main
 
 			} 
 		}
+	
+
 	}
 }
