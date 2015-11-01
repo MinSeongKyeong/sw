@@ -11,7 +11,7 @@ class Student
 
 public class UpdateStudent{
 	
-	public void UpdateStudent() throws Exception {
+	public void updateStudent() throws Exception {
 
 		File ofile = new File("studentlist.txt");
 	    FileReader fr = new FileReader(ofile);
@@ -20,7 +20,7 @@ public class UpdateStudent{
 	    int i=0;
 	    
 	    while((i=fr.read())!=-1)
-	    {// ÆÄÀÏÀ» EOF ±îÁö ÀÐ±â
+	    {// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ EOF ï¿½ï¿½ï¿½ï¿½ ï¿½Ð±ï¿½
 	       data+=(char)i;
 	    }
 	   
