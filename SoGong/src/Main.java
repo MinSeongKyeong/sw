@@ -11,53 +11,53 @@ public class Main
 			System.out.println();
 			System.out.println("\n");
 			System.out.println("\n");
-			System.out.println("�ݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢ�");
-			System.out.println("�ݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢ�");
-			System.out.println("�ݢ�                                                  �ݢ�");
-			System.out.println("�ݢ�        �л�  ���� ���α׷�                       �ݢ�");
-			System.out.println("�ݢ�                                                  �ݢ�");
-			System.out.println("�ݢ�        1)  �л� ���                             �ݢ�");
-			System.out.println("�ݢ�        2)  �л� �˻�                             �ݢ�");
-			System.out.println("�ݢ�        3)  �л� ����                             �ݢ�");
-			System.out.println("�ݢ�        4)  �л� ��� ����                        �ݢ�");
-			System.out.println("�ݢ�        5)  ���α׷� ����                         �ݢ�");
-			System.out.println("�ݢ�                                                  �ݢ�");
-			System.out.println("�ݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢ�");
-			System.out.println("�ݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢ�");
+			System.out.println("占쌥♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬�占�");
+			System.out.println("占쌥♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬�占�");
+			System.out.println("占쌥�占�                                                  占쌥�占�");
+			System.out.println("占쌥�占�        占싻삼옙  占쏙옙占쏙옙 占쏙옙占싸그뤄옙                       占쌥�占�");
+			System.out.println("占쌥�占�                                                  占쌥�占�");
+			System.out.println("占쌥�占�        1)  占싻삼옙 占쏙옙占�                             占쌥�占�");
+			System.out.println("占쌥�占�        2)  占싻삼옙 占싯삼옙                             占쌥�占�");
+			System.out.println("占쌥�占�        3)  占싻삼옙 占쏙옙占쏙옙                             占쌥�占�");
+			System.out.println("占쌥�占�        4)  占싻삼옙 占쏙옙占� 占쏙옙占쏙옙                        占쌥�占�");
+			System.out.println("占쌥�占�        5)  占쏙옙占싸그뤄옙 占쏙옙占쏙옙                         占쌥�占�");
+			System.out.println("占쌥�占�                                                  占쌥�占�");
+			System.out.println("占쌥♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬�占�");
+			System.out.println("占쌥♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬�占�");
 			System.out.println();
-			System.out.print("�޴��� �����ϼ���.(1~5) ");
+			System.out.print("占쌨댐옙占쏙옙 占쏙옙占쏙옙占싹쇽옙占쏙옙.(1~5) ");
 
 			try{
 				switch(Integer.parseInt(in.readLine())){
-					case 1 : // �л� ���
+					case 1 : // 占싻삼옙 占쏙옙占�
 						
 						AddStudent add = new AddStudent();
 						add.addStudent();
 
 						break;
 
-					case 2 : // �л� �˻�
+					case 2 : // 占싻삼옙 占싯삼옙
 					
 						ViewStudent view= new ViewStudent(); 
 						view.viewStudent();
 
 						break;
 
-					case 3 : // �л� ����
+					case 3 : // 占싻삼옙 占쏙옙占쏙옙
 
-					case 4 : // �л� ���� ����
+					case 4 : // 占싻삼옙 占쏙옙占쏙옙 占쏙옙占쏙옙
 						
 						UpdateStudent update = new UpdateStudent();
-						update.UpdateStudent();
+						update.updateStudent();
 						
 						break;
 
-					case 5: // ����
+					case 5: // 占쏙옙占쏙옙
 
-					default : // 1~5 �̿��� ���� �Էµ� ��
+					default : // 1~5 占싱울옙占쏙옙 占쏙옙占쏙옙 占쌉력듸옙 占쏙옙
 
 						System.out.println();
-						System.out.println("�޴��� �ٽ� �����ϼ���");
+						System.out.println("占쌨댐옙占쏙옙 占쌕쏙옙 占쏙옙占쏙옙占싹쇽옙占쏙옙");
 						Thread.sleep(1000);
 						continue;
 				} 

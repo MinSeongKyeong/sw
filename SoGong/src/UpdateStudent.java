@@ -9,9 +9,9 @@ class Student
    String phonenum;
 }
 
-public class UpdateStudent{
+class UpdateStudent{
 	
-	public void UpdateStudent() throws Exception {
+	public void updateStudent() throws Exception {
 
 		File ofile = new File("studentlist.txt");
 	    FileReader fr = new FileReader(ofile);
