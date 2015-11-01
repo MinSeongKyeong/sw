@@ -8,7 +8,7 @@ class Student
    String phonenum;
 }
 
-class UpdateStudent{
+public class UpdateStudent{
 	
 	public void updateStudent() throws Exception {
 		File ofile = new File("studentlist.txt");
