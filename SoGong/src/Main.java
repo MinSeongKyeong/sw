@@ -11,53 +11,60 @@ public class Main
 			System.out.println();
 			System.out.println("\n");
 			System.out.println("\n");
-			System.out.println("�ݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢ�");
-			System.out.println("�ݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢ�");
-			System.out.println("�ݢ�                                                  �ݢ�");
-			System.out.println("�ݢ�        �л�  ���� ���α׷�                       �ݢ�");
-			System.out.println("�ݢ�                                                  �ݢ�");
-			System.out.println("�ݢ�        1)  �л� ���                             �ݢ�");
-			System.out.println("�ݢ�        2)  �л� �˻�                             �ݢ�");
-			System.out.println("�ݢ�        3)  �л� ����                             �ݢ�");
-			System.out.println("�ݢ�        4)  �л� ��� ����                        �ݢ�");
-			System.out.println("�ݢ�        5)  ���α׷� ����                         �ݢ�");
-			System.out.println("�ݢ�                                                  �ݢ�");
-			System.out.println("�ݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢ�");
-			System.out.println("�ݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢ�");
+			System.out.println("♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬");
+			System.out.println("♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬");
+			System.out.println("♬♬                                                  ♬♬");
+			System.out.println("♬♬        학생  관리 프로그램                       ♬♬");
+			System.out.println("♬♬                                                  ♬♬");
+			System.out.println("♬♬        1)  학생 등록                             ♬♬");
+			System.out.println("♬♬        2)  학생 검색                             ♬♬");
+			System.out.println("♬♬        3)  학생 삭제                             ♬♬");
+			System.out.println("♬♬        4)  학생 기록 수정                        ♬♬");
+			System.out.println("♬♬        5)  프로그램 종료                         ♬♬");
+			System.out.println("♬♬                                                  ♬♬");
+			System.out.println("♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬");
+			System.out.println("♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬");
 			System.out.println();
-			System.out.print("�޴��� �����ϼ���.(1~5) ");
+			System.out.print("메뉴를 선택하세요.(1~5) ");
 
 			try{
 				switch(Integer.parseInt(in.readLine())){
-					case 1 : // �л� ���
-						
+					case 1 : // 학생 등록
+
 						AddStudent add = new AddStudent();
 						add.addStudent();
 
 						break;
 
-					case 2 : // �л� �˻�
+					case 2 : // 학생 검색
 					
 						ViewStudent view= new ViewStudent(); 
 						view.viewStudent();
 
 						break;
 
-					case 3 : // �л� ����
+					case 3 : // 학생 삭제
+		 				
+						DeleteStudent delete = new DeleteStudent();
+						delete.deleteStudent();
+						break;
 
-					case 4 : // �л� ���� ����
+					case 4 : // 학생 정보 수정
 						
 						UpdateStudent update = new UpdateStudent();
-						update.UpdateStudent();
+						update.updateStudent();
 						
 						break;
 
-					case 5: // ����
+					case 5: // 종료
 
-					default : // 1~5 �̿��� ���� �Էµ� ��
+						System.out.print("시스템이 종료 됩니다.  ");
+						break wh;
+
+					default : // 1~5 이외의 것이 입력될 때
 
 						System.out.println();
-						System.out.println("�޴��� �ٽ� �����ϼ���");
+						System.out.println("메뉴를 다시 선택하세요");
 						Thread.sleep(1000);
 						continue;
 				} 
