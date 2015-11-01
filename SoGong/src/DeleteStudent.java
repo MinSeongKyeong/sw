@@ -6,6 +6,10 @@
 
              String strLine = "0"; 
              String dummy = ""; 
+			 String delete;
+
+			 BufferedReader input = new BufferedReader(new InputStreamReader (System.in));
+			 
 
              try { 
                      
@@ -13,11 +17,13 @@
 
                     int studentCount = 0;
 
+					System.out.print("Delete할 학생의 인적사항을 입력하세요 : ");
+					delete = input.readLine();
 					
 
                     while ((strLine = fileReader.readLine()) != null) { 
 
-                           if(!strLine.contains("0911328")) { 
+                           if(!strLine.contains(delete)) { 
 
                               dummy += strLine + "\r\n"; 
 
@@ -27,7 +33,7 @@
 
                     }                      
 
-					System.out.println(dummy);
+					System.out.println("\n"+dummy);
 					fileReader.close();
 
                 } catch (IOException ioe) { 
