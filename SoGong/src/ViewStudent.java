@@ -33,7 +33,7 @@ public class ViewStudent {
             sb.append(id + " " + name + " " + department + " " + phonenum); 
 			} 
 		} 
-	} catch (FileNotFoundException e) { 
+	}catch (FileNotFoundException e) { 
 		e.printStackTrace(); 
 	} catch (IOException e) { 
 		e.printStackTrace(); 
@@ -41,16 +41,5 @@ public class ViewStudent {
 	if(name == "")
 		System.out.println("해당 학번이 없습니다.");
 	else System.out.println(sb.toString()); 
-	}
-		
-	public static void main(String args[]) {
-		int menu;
-		ViewStudent view= new ViewStudent(); {
-		System.out.print("메뉴를 선택하세요. :");
-		Scanner menuScanner = new Scanner(System.in);
-		menu = menuScanner.nextInt();
-		if(menu == 3)
-		{ view.viewStudent();  }
-		else if (menu == 0);
 	}
 }
