@@ -45,16 +45,12 @@ public class ViewStudent {
 		
 	public static void main(String args[]) {
 		int menu;
-		ViewStudent view= new ViewStudent(); 
-		while (true)
-		{
+		ViewStudent view= new ViewStudent(); {
 		System.out.print("메뉴를 선택하세요. :");
 		Scanner menuScanner = new Scanner(System.in);
 		menu = menuScanner.nextInt();
 		if(menu == 3)
 		{ view.viewStudent();  }
-		else if (menu == 0)
-		 break;
-		}
+		else if (menu == 0);
 	}
 }
