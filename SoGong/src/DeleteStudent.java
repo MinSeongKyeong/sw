@@ -2,7 +2,7 @@
 
  public class DeleteStudent { 
 	 
-      public void deleteStudent() { //void main(String args[]) { 
+      public void deleteStudent() {
 
              String strLine = "0"; 
              String dummy = ""; 
@@ -33,7 +33,7 @@
 
                     }                      
 
-					//System.out.println("\n"+dummy);
+					System.out.println("\n"+dummy);
                     FileWriter filewriter = new FileWriter(new File("studentlist.txt")); 
                     
 					filewriter.write(dummy); 
