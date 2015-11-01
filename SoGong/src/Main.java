@@ -46,6 +46,11 @@ public class Main
 					case 3 : // 학생 삭제
 
 					case 4 : // 학생 정보 수정
+						
+						UpdateStudent update = new UpdateStudent();
+						update.UpdateStudent();
+						
+						break;
 
 					case 5: // 종료
 
