@@ -33,7 +33,7 @@
 
                     }                      
 
-					System.out.println("\n"+dummy);
+					//System.out.println("\n"+dummy);
                     FileWriter filewriter = new FileWriter(new File("studentlist.txt")); 
                     
 					filewriter.write(dummy); 
