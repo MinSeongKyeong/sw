@@ -1,5 +1,4 @@
 import java.io.*;
-import javax.swing.*;
 
 class Student
 {
@@ -20,7 +19,7 @@ class UpdateStudent{
 	    int i=0;
 	    
 	    while((i=fr.read())!=-1)
-	    {// 파일을 EOF 까지 읽기
+	    {
 	       data+=(char)i;
 	    }
 	   

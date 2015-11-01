@@ -11,53 +11,53 @@ public class Main
 			System.out.println();
 			System.out.println("\n");
 			System.out.println("\n");
-			System.out.println("占쌥♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬�占�");
-			System.out.println("占쌥♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬�占�");
-			System.out.println("占쌥�占�                                                  占쌥�占�");
-			System.out.println("占쌥�占�        占싻삼옙  占쏙옙占쏙옙 占쏙옙占싸그뤄옙                       占쌥�占�");
-			System.out.println("占쌥�占�                                                  占쌥�占�");
-			System.out.println("占쌥�占�        1)  占싻삼옙 占쏙옙占�                             占쌥�占�");
-			System.out.println("占쌥�占�        2)  占싻삼옙 占싯삼옙                             占쌥�占�");
-			System.out.println("占쌥�占�        3)  占싻삼옙 占쏙옙占쏙옙                             占쌥�占�");
-			System.out.println("占쌥�占�        4)  占싻삼옙 占쏙옙占� 占쏙옙占쏙옙                        占쌥�占�");
-			System.out.println("占쌥�占�        5)  占쏙옙占싸그뤄옙 占쏙옙占쏙옙                         占쌥�占�");
-			System.out.println("占쌥�占�                                                  占쌥�占�");
-			System.out.println("占쌥♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬�占�");
-			System.out.println("占쌥♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬�占�");
+			System.out.println("♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬");
+			System.out.println("♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬");
+			System.out.println("♬♬                                                  ♬♬");
+			System.out.println("♬♬        학생  관리 프로그램                       ♬♬");
+			System.out.println("♬♬                                                  ♬♬");
+			System.out.println("♬♬        1)  학생 등록                             ♬♬");
+			System.out.println("♬♬        2)  학생 검색                             ♬♬");
+			System.out.println("♬♬        3)  학생 삭제                             ♬♬");
+			System.out.println("♬♬        4)  학생 기록 수정                        ♬♬");
+			System.out.println("♬♬        5)  프로그램 종료                         ♬♬");
+			System.out.println("♬♬                                                  ♬♬");
+			System.out.println("♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬");
+			System.out.println("♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬♬");
 			System.out.println();
-			System.out.print("占쌨댐옙占쏙옙 占쏙옙占쏙옙占싹쇽옙占쏙옙.(1~5) ");
+			System.out.print("메뉴를 선택하세요.(1~5) ");
 
 			try{
 				switch(Integer.parseInt(in.readLine())){
-					case 1 : // 占싻삼옙 占쏙옙占�
+					case 1 : // 학생 등록
 						
 						AddStudent add = new AddStudent();
 						add.addStudent();
 
 						break;
 
-					case 2 : // 占싻삼옙 占싯삼옙
+					case 2 : // 학생 검색
 					
 						ViewStudent view= new ViewStudent(); 
 						view.viewStudent();
 
 						break;
 
-					case 3 : // 占싻삼옙 占쏙옙占쏙옙
+					case 3 : // 학생 삭제
 
-					case 4 : // 占싻삼옙 占쏙옙占쏙옙 占쏙옙占쏙옙
+					case 4 : // 학생 정보 수정
 						
 						UpdateStudent update = new UpdateStudent();
 						update.updateStudent();
 						
 						break;
 
-					case 5: // 占쏙옙占쏙옙
+					case 5: // 종료
 
-					default : // 1~5 占싱울옙占쏙옙 占쏙옙占쏙옙 占쌉력듸옙 占쏙옙
+					default : // 1~5 이외의 것이 입력될 때
 
 						System.out.println();
-						System.out.println("占쌨댐옙占쏙옙 占쌕쏙옙 占쏙옙占쏙옙占싹쇽옙占쏙옙");
+						System.out.println("메뉴를 다시 선택하세요");
 						Thread.sleep(1000);
 						continue;
 				} 
