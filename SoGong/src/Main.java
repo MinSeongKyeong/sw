@@ -11,48 +11,53 @@ public class Main
 			System.out.println();
 			System.out.println("\n");
 			System.out.println("\n");
-			System.out.println("�ݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢ�");
-			System.out.println("�ݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢ�");
-			System.out.println("�ݢ�                                                  �ݢ�");
-			System.out.println("�ݢ�        �л�  ���� ���α׷�                       �ݢ�");
-			System.out.println("�ݢ�                                                  �ݢ�");
-			System.out.println("�ݢ�        1)  �л� ���                             �ݢ�");
-			System.out.println("�ݢ�        2)  �л� �˻�                             �ݢ�");
-			System.out.println("�ݢ�        3)  �л� ����                             �ݢ�");
-			System.out.println("�ݢ�        4)  �л� ��� ����                        �ݢ�");
-			System.out.println("�ݢ�        5)  ���α׷� ����                         �ݢ�");
-			System.out.println("�ݢ�                                                  �ݢ�");
-			System.out.println("�ݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢ�");
-			System.out.println("�ݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢ�");
+			System.out.println("�ݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢ�");
+			System.out.println("�ݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢ�");
+			System.out.println("�ݢ�                                                  �ݢ�");
+			System.out.println("�ݢ�        �л�  ���� ���α׷�                       �ݢ�");
+			System.out.println("�ݢ�                                                  �ݢ�");
+			System.out.println("�ݢ�        1)  �л� ���                             �ݢ�");
+			System.out.println("�ݢ�        2)  �л� �˻�                             �ݢ�");
+			System.out.println("�ݢ�        3)  �л� ����                             �ݢ�");
+			System.out.println("�ݢ�        4)  �л� ��� ����                        �ݢ�");
+			System.out.println("�ݢ�        5)  ���α׷� ����                         �ݢ�");
+			System.out.println("�ݢ�                                                  �ݢ�");
+			System.out.println("�ݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢ�");
+			System.out.println("�ݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢݢ�");
 			System.out.println();
-			System.out.print("�޴��� �����ϼ���.(1~5) ");
+			System.out.print("�޴��� �����ϼ���.(1~5) ");
 
 			try{
 				switch(Integer.parseInt(in.readLine())){
-					case 1 : // �л� ���
+					case 1 : // �л� ���
 						
 						AddStudent add = new AddStudent();
 						add.addStudent();
 
 						break;
 
-					case 2 : // �л� �˻�
+					case 2 : // �л� �˻�
 					
 						ViewStudent view= new ViewStudent(); 
 						view.viewStudent();
 
 						break;
 
-					case 3 : // �л� ����
+					case 3 : // �л� ����
 
-					case 4 : // �л� ���� ����
+					case 4 : // �л� ���� ����
+						
+						UpdateStudent update = new UpdateStudent();
+						update.UpdateStudent();
+						
+						break;
 
-					case 5: // ����
+					case 5: // ����
 
-					default : // 1~5 �̿��� ���� �Էµ� ��
+					default : // 1~5 �̿��� ���� �Էµ� ��
 
 						System.out.println();
-						System.out.println("�޴��� �ٽ� �����ϼ���");
+						System.out.println("�޴��� �ٽ� �����ϼ���");
 						Thread.sleep(1000);
 						continue;
 				} 
