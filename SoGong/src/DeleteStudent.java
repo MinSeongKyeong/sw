@@ -17,7 +17,7 @@
 
                     int studentCount = 0;
 
-					System.out.print("Delete할 학생의 인적사항을 입력하세요 : ");
+					System.out.println("Delete할 학생의 인적사항을 입력하세요 : ");
 					delete = input.readLine();
 					
 
