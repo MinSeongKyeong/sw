@@ -5,7 +5,7 @@
       public void deleteStudent() {
 
              String strLine = "0"; 
-             String dummy = ""; 
+             String remain = ""; 
 			 String delete;
 
 			 BufferedReader input = new BufferedReader(new InputStreamReader (System.in));
@@ -25,7 +25,7 @@
 
                            if(!strLine.contains(delete)) { 
 
-                              dummy += strLine + "\r\n"; 
+                              remain += strLine + "\r\n"; 
 
                            } 
 
@@ -33,10 +33,10 @@
 
                     }                      
 
-					//System.out.println("\n"+dummy);
+					//System.out.println("\n"+remain);
                     FileWriter filewriter = new FileWriter(new File("studentlist.txt")); 
                     
-					filewriter.write(dummy); 
+					filewriter.write(remain); 
 				    System.out.println("\n Delete 완료");
 
                     filewriter.flush(); 
