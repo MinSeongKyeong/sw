@@ -5,26 +5,28 @@ import java.util.Scanner;
 
 public class AddStudent {
 	 public void addStudent()throws IOException{ 
+	 
+	         Scanner scan = new Scanner(System.in);
+	         String fpath = "C:" + "studentlist.txt";
 
-	 Scanner scan = new Scanner(System.in);
-     String fpath = "C:" + "studentlist.txt";
-         
-     try {
-         PrintWriter out = new PrintWriter(new FileWriter(fpath, true));
-	 System.out.println("ÇĞ»ıÁ¤º¸¸¦ µî·ÏÇÕ´Ï´Ù.");
-     System.out.println("ÇĞ¹ø ÀÌ¸§ ÇĞ°ú ÀüÈ­¹øÈ£ ¼øÀ¸·Î Àû¾îÁÖ¼¼¿ä. ");
-     System.out.println("ÇĞ¹ø	ÀÌ¸§	 ÇĞ°ú	 ÀüÈ­¹øÈ£ ");
-     String str = scan.nextLine();
-	   out.println(str);
+	          try {
 
-	   scan.close();
-	   out.close();
+	            PrintWriter out = new PrintWriter(new FileWriter(fpath, true));
+	               System.out.println("í•™ìƒì •ë³´ë¥¼ ë“±ë¡í•©ë‹ˆë‹¤.");
+	               System.out.println("í•™ë²ˆ ì´ë¦„ í•™ê³¼ ì „í™”ë²ˆí˜¸ ìˆœìœ¼ë¡œ ì ì–´ì£¼ì„¸ìš”. ");
+	               System.out.println("í•™ë²ˆ	ì´ë¦„	 í•™ê³¼	 ì „í™”ë²ˆí˜¸ ");
+	               String str = scan.nextLine();
+				   out.println(str);
+	     
+	        out.close();
+	     
+	        } catch (Exception e) {
+	    
+	           if(e instanceof IOException) System.out.println("Input & Out Error ");
+	           else System.out.println("Etc Error " + e.toString());
 
-     } catch (Exception e) {
 
-    	 if(e instanceof IOException) System.out.println("Input & Out Error ");
-    	 else System.out.println("Etc Error " + e.toString());
-     } 	
+	        } 
 
-	 } 
-}
+	    } 
+	   } 
