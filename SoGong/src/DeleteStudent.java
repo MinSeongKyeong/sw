@@ -15,7 +15,7 @@
                      
                     BufferedReader fileReader = new BufferedReader(new FileReader(new File("studentlist.txt"))); 
 
-               System.out.print("Delete할 학생의 인적사항을 입력하세요 : ");
+               System.out.print("Delete할 학생의 학번을 입력하세요 : ");
                delete = input.readLine();
                
 
