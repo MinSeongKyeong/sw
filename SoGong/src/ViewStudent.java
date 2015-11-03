@@ -20,7 +20,7 @@ public class ViewStudent {
 		System.out.print("조회 하고자 하는 학번 입력 : ");
 		id = sc.next();
 		if(id.length()!=7) System.out.print("잘못 입력하셨습니다. ");
-		
+		else{
 
 		while((getLine = br.readLine()) != null){ 
 			if(getLine.contains(id)){ 
@@ -32,8 +32,9 @@ public class ViewStudent {
            
             sb.append(id + " " + name + " " + department + " " + phonenum); 
 			} 
+		}
 		} 
-	}catch (FileNotFoundException e) { 
+	} catch (FileNotFoundException e) { 
 		e.printStackTrace(); 
 	} catch (IOException e) { 
 		e.printStackTrace(); 

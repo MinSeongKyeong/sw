@@ -5,7 +5,7 @@
       public void deleteStudent() {
 
              String strLine = "0"; 
-             String dummy = ""; 
+             String remain = ""; 
 			 String delete;
 
 			 BufferedReader input = new BufferedReader(new InputStreamReader (System.in));
@@ -15,8 +15,6 @@
                      
                     BufferedReader fileReader = new BufferedReader(new FileReader(new File("studentlist.txt"))); 
 
-                    int studentCount = 0;
-
 					System.out.print("Delete할 학생의 인적사항을 입력하세요 : ");
 					delete = input.readLine();
 					
@@ -25,24 +23,22 @@
 
                            if(!strLine.contains(delete)) { 
 
-                              dummy += strLine + "\r\n"; 
+                              remain += strLine + "\r\n"; 
 
                            } 
 
-						   studentCount++; 
-
                     }                      
 
-					//System.out.println("\n"+dummy);
-                    FileWriter filewriter = new FileWriter(new File("studentlist.txt")); 
+					FileWriter filewriter = new FileWriter(new File("studentlist.txt")); 
                     
-					filewriter.write(dummy); 
-				    System.out.println("\n Delete 완료");
+					filewriter.write(remain); 
 
                     filewriter.flush(); 
 
                     filewriter.close(); 
-					fileReader.close();
+
+                    fileReader.close(); 
+
 
                 } catch (IOException ioe) { 
 
