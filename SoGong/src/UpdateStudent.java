@@ -45,9 +45,6 @@ public class UpdateStudent{
 	             std[i].phonenum=inputpnum; 
 	 			System.out.println("Update 완료");
 	          }
-	 		 else{
-	 			 System.out.println("입력하신 학번이 없습니다");
-	 		 }
 	         String st = std[i].studentnum+" "+std[i].name+" "+std[i].department+" "+std[i].phonenum;
 	         fw.write(st+"\n");               
 	      }
