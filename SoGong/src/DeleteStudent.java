@@ -1,37 +1,39 @@
  import java.io.*; 
 
  public class DeleteStudent { 
-	 
+    
       public void deleteStudent() {
 
-             String strLine = "0"; 
+             String stringLine = "0"; 
              String remain = ""; 
-			 String delete;
+          String delete;
 
-			 BufferedReader input = new BufferedReader(new InputStreamReader (System.in));
-			 
+          BufferedReader input = new BufferedReader(new InputStreamReader (System.in));
+          
 
              try { 
                      
                     BufferedReader fileReader = new BufferedReader(new FileReader(new File("studentlist.txt"))); 
 
-					System.out.print("Delete할 학생의 인적사항을 입력하세요 : ");
-					delete = input.readLine();
-					
+               System.out.print("Delete할 학생의 인적사항을 입력하세요 : ");
+               delete = input.readLine();
+               
 
-                    while ((strLine = fileReader.readLine()) != null) { 
+                    while ((stringLine = fileReader.readLine()) != null) { 
 
-                           if(!strLine.contains(delete)) { 
+                           if(!stringLine.contains(delete)) { 
 
-                              remain += strLine + "\r\n"; 
+                              remain += stringLine + "\r\n"; 
 
                            } 
 
                     }                      
 
-					FileWriter filewriter = new FileWriter(new File("studentlist.txt")); 
+               FileWriter filewriter = new FileWriter(new File("studentlist.txt")); 
                     
-					filewriter.write(remain); 
+               filewriter.write(remain); 
+
+               System.out.println("Delete 완료.");
 
                     filewriter.flush(); 
 
@@ -44,11 +46,10 @@
 
                     ioe.printStackTrace(); 
 
-				 } 
+             } 
 
                
-				
+            
       } 
 
  } 
-
