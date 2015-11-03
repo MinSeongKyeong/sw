@@ -15,9 +15,7 @@
                      
                     BufferedReader fileReader = new BufferedReader(new FileReader(new File("studentlist.txt"))); 
 
-                    int studentCount = 0;
-
-					System.out.println("Delete할 학생의 인적사항을 입력하세요 : ");
+					System.out.print("Delete할 학생의 인적사항을 입력하세요 : ");
 					delete = input.readLine();
 					
 
@@ -29,20 +27,18 @@
 
                            } 
 
-						   studentCount++; 
-
                     }                      
 
-					//System.out.println("\n"+remain);
-                    FileWriter filewriter = new FileWriter(new File("studentlist.txt")); 
+					FileWriter filewriter = new FileWriter(new File("studentlist.txt")); 
                     
 					filewriter.write(remain); 
-				    System.out.println("\n Delete 완료");
 
                     filewriter.flush(); 
 
                     filewriter.close(); 
-					fileReader.close();
+
+                    fileReader.close(); 
+
 
                 } catch (IOException ioe) { 
 
