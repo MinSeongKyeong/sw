@@ -32,6 +32,8 @@
 					FileWriter filewriter = new FileWriter(new File("studentlist.txt")); 
                     
 					filewriter.write(remain); 
+					
+					System.out.println("Delete 완료.");
 
                     filewriter.flush(); 
 
