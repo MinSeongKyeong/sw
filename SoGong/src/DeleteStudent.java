@@ -4,7 +4,7 @@
 	 
       public void deleteStudent() {
 
-             String strLine = "0"; 
+             String stringLine = "0"; 
              String remain = ""; 
 			 String delete;
 
@@ -19,11 +19,11 @@
 					delete = input.readLine();
 					
 
-                    while ((strLine = fileReader.readLine()) != null) { 
+                    while ((stringLine = fileReader.readLine()) != null) { 
 
-                           if(!strLine.contains(delete)) { 
+                           if(!stringLine.contains(delete)) { 
 
-                              remain += strLine + "\r\n"; 
+                              remain += stringLine + "\r\n"; 
 
                            } 
 
